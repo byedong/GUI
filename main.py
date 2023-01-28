@@ -101,9 +101,28 @@ reader_ker900 = Button(tab_reader, text='KER-900(22-01-06)', command=lambda: cli
 reader_ker900.grid(column=2, row=1, padx=10, pady=10)
 
 #매크로(보고서)
+macro_sugi_sum_url = "macro_sugi_sum_url"
+macro_sugi_sum = Button(tab_macro, text='수기조사 합치기', command=lambda: click_url(macro_sugi_sum_url), width=25, height=2)
+macro_sugi_sum.grid(column=1, row=1, padx=10, pady=10)
+
+macro_sugi_image_output_url = "macro_sugi_image_output_url"
+macro_sugi_image_output = Button(tab_macro, text='수기조사_잔여_이미지_추출', command=lambda: click_url(macro_sugi_image_output_url), width=25, height=2)
+macro_sugi_image_output.grid(column=2, row=1, padx=10, pady=10)
+
+
+macro_report_make_url = "macro_report_make_url"
+macro_report_make = Button(tab_macro, text='보고서_만들기', command=lambda: click_url(macro_report_make_url), width=25, height=2)
+macro_report_make.grid(column=1, row=2, padx=10, pady=10)
+
+
 macro_report_url = "macro_report_url"
-macro_report = Button(tab_macro, text='보고서(기관제출용)샘플', command=lambda: click_url(macro_report_url), width=25, height=2)
-macro_report.grid(column=1, row=1, padx=10, pady=10)
+macro_report = Button(tab_macro, text='보고서_샘플_다운로드', command=lambda: click_url(macro_report_url), width=25, height=2)
+macro_report.grid(column=2, row=1, padx=10, pady=10)
+
+
+macro_jaemul_url = "macro_jaemul_url"
+macro_jaemul = Button(tab_macro, text='재물조사 매크로(엑셀)', command=lambda: click_url(macro_jaemul_url), width=25, height=2)
+macro_jaemul.grid(column=2, row=2, padx=10, pady=10)
 
 
 window.mainloop()
